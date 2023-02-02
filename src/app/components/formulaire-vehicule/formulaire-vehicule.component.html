@@ -1,0 +1,57 @@
+<div class="formContainer">
+    <div class="form">
+      <h4>{{titreFormulaire}}</h4>
+      <form (ngSubmit)="submit()" [formGroup]="formVehicule">
+        <div>
+          <label>Type</label>
+          <select formControlName="type">
+            <option value="voiture">Voiture</option>
+            <option value="moto">Moto</option>
+            <option value="camion">Camion</option>
+            <option value="utilitaire">Utilitaire</option>
+          </select>
+        </div>
+        <div>
+          <label>Marque</label>
+          <input formControlName="marque" type="text">
+        </div>
+        <div>
+          <label>Modèle</label>
+          <input formControlName="modele" type="text">
+        </div>
+        <div>
+          <label>Immatriculation</label>
+          <input formControlName="immat" type="text">
+        </div>
+        <div>
+          <label>Etat</label>
+          <select formControlName="etat">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+          </select>
+        </div>
+        <div>
+          <label>Prix à la journée</label>
+          <input formControlName="prix" type="number">
+        </div>
+        <div>
+          <label>Disponibilité</label>
+          <select formControlName="disponibilite">
+            <option value="Disponible">Disponible</option>
+            <option value="Indisponible">Indisponible</option>
+          </select>
+        </div>
+        <div class="buttonContainer">
+          <button class="deleteButton" (click)="annuler()">Annuler</button>
+          <button>Valider</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+
+
+

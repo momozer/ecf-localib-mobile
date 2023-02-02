@@ -1,0 +1,8 @@
+{
+  "appId": "io.ionic.localib",
+  "appName": "localib",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "build",
+  "cordova": {}
+}

@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">localib</string>
+    <string name="title_activity_main">localib</string>
+    <string name="package_name">io.ionic.localib</string>
+    <string name="custom_url_scheme">io.ionic.localib</string>
+</resources>

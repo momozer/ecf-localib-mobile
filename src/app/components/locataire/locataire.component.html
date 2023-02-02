@@ -1,0 +1,8 @@
+<div class="locataire-card">
+    <h3>{{locataire.id}}</h3>
+    <h3>{{locataire.nom}} {{locataire.prenom}}</h3>    
+    <h5>{{locataire.mail}}</h5>
+    <button (click)="onDetail()">Détails</button>
+    <button class="suppr" (click)="onSupprimer()">Supprimer</button>
+    <button class="modif" (click)="onModifier()">Modifier</button>
+</div>

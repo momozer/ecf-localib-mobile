@@ -1,0 +1,28 @@
+
+<div class="location-card">
+  <div >
+    <h3>{{location.id}}</h3>
+  </div>
+  <div>
+    <h3>Id: {{location.locataire.id}}</h3>
+    <h3>Nom: {{location.locataire.nom}}</h3>
+    <h3>Prénom: {{location.locataire.prenom}}</h3>
+    <h5>Email: {{location.locataire.mail}}</h5>
+  </div>
+  <div>
+    <img class="photo" [src] = "location.vehicule.photo" [alt]="location.vehicule.modele">
+  </div>
+  <div class="rentalCarInfo">
+    <h2>{{location.vehicule.statut}}</h2>
+    <h2>{{location.vehicule.prix | currency: 'EUR'}}</h2>
+    <h2>Etat : {{location.vehicule.etat}}</h2>
+  </div>
+  <div class="rentalDuration">
+    <h3>Du : {{location.dateDebut | date: 'dd/MM/yyyy, à HH:mm'}}</h3>
+    <h3>au : {{location.dateFin | date: 'dd/MM/yyyy, à HH:mm'}}</h3>
+  </div>
+  <div>
+    <button (click)="onModifier()">Modifier</button>
+    <button class="deleteButton" (click)="onSupprimer()">Supprimer</button>
+  </div>
+</div>

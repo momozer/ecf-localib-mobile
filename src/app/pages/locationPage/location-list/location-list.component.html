@@ -1,0 +1,12 @@
+<div>
+    <button (click)="creerLocation()">Nouvelle location</button>
+  </div>
+  
+<app-formulaire-location *ngIf="newLocation == true"></app-formulaire-location>
+<app-formulaire-location *ngIf="modifLocation == true" [location]="location"></app-formulaire-location>
+<div>
+    <app-location *ngFor="let locationsArrayElement of locations" 
+    [location]="locationsArrayElement"></app-location>
+</div>
+
+

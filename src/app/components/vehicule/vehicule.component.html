@@ -1,0 +1,26 @@
+<!-- <div class="vehicule-card">
+    <h3>{{vehicule.marque}} {{vehicule.modele}}</h3>
+    <p>Type de véhicule : {{vehicule.type}}</p>
+    <p>Statut: {{vehicule.statut}}</p>
+    <button (click)="onDetail()">Détails</button>
+    <button (click)="modifierVehicule()">Modifier</button>
+    <button class="suppr" (click)="onSupprimer()">Supprimer</button>
+</div> -->
+<div class="card" [ngClass]="{ voitureIndispo: vehicule.statut === 'Indisponible'}">
+    <div class="leftDiv">
+      <img [src] = "vehicule.photo" [alt]="vehicule.modele">
+      <p>{{vehicule.immatriculation}}</p>
+      <h2>Etat : {{vehicule.etat}}</h2>
+    </div>
+    <div class="centralDiv">
+      <h2>{{vehicule.modele}}</h2>
+      <h2>{{vehicule.marque}}</h2>
+    </div>
+    <div class="rightDiv" [ngClass]="{ rightDivNoDisponibility: vehicule.statut === 'Indisponible'}">
+      <h3>{{vehicule.statut}}</h3>
+      <h1>{{vehicule.prix | currency: 'EUR'}}</h1>
+      <button class="louer" (click)="louer()">Louer</button>
+      <button class="modif" (click)="modifierVehicule()" >Modifier</button>
+      <button class="suppr" (click)="onSupprimer()">Supprimer</button>
+    </div>
+  </div>

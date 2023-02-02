@@ -1,0 +1,12 @@
+<div>
+    <button (click)="creerLocataire()">Nouveau client</button>
+  </div>
+  
+<app-formulaire-locataire *ngIf="newLocataire == true"></app-formulaire-locataire>
+<app-formulaire-locataire *ngIf="modifLocataire == true" [locataire]="locataire"></app-formulaire-locataire>
+<div>
+    <app-locataire *ngFor="let locatairesArrayElement of locataires" 
+    [locataire]="locatairesArrayElement"></app-locataire>
+</div>
+
+
