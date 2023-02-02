@@ -9,17 +9,24 @@ Vous trouverez dans ce dépôt un dossier qui contient la partie front-end de ce
 
 ## Prérequis
 - JavaScript
-- IDE javaScript (j'utilise VsCode)
+- IDE javaScript (j'utilise [VsCode](https://code.visualstudio.com/download))
+- [Ionic](https://ionicframework.com/)
+- [Angular](https://angular.io/)
 
 
 ## Installation
 
 
-### Installation des Nodes modules:
+### Installation des Nodes modules et d'Angular CLI:
 Il faut se placer dans le dossier racine et lancer la commande :
 ```
 npm install
 ```
+ensuite pour installer le CLI de Angular :
+```
+npm install -g @angular/cli
+```
+
 ### Lancement de l'application:
 pour lancer l'application, il faut se placer dans le dosser racine et lancer la commande :
 ```
